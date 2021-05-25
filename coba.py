@@ -1,9 +1,11 @@
+#!/usr/bin/python2
 #-*-coding:utf-8-*-
+
 import requests,bs4,sys,os,subprocess
-import requests,sys,random,time,re,base64,json,uuid
-import importlib
-importlib.reload(sys)
-from concurrent.futures import ThreadPoolExecutor as ThreadPool
+import requests,sys,random,time,re,base64,json
+reload(sys)
+sys.setdefaultencoding("utf-8")
+from multiprocessing.pool import ThreadPool
 
 if ("linux" in sys.platform.lower()):
 

